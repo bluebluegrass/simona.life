@@ -56,12 +56,6 @@
 
   /* solid */
 
-  Sea green: #5F9595
-  Sun orange: #F0BC68
-  Pastel teal: #C4D7D1
-  Pastel pink: #F5D1C3
-  Salmon: #FFB6A3
-
 
   --jet: #F0BC68;
   --onyx: hsl(350, 52%, 85%);
@@ -167,6 +161,7 @@ body { background: var(--smoky-black); }
 
 
 
+.circular--square { border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; }
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -339,7 +334,7 @@ main {
 }
 
 .avatar-box {
-  background: var(--bg-gradient-onyx);
+  background: none;
   border-radius: 20px;
 }
 
