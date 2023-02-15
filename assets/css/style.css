@@ -59,7 +59,7 @@
 
   --jet: #F0BC68;
   --onyx: hsl(350, 52%, 85%);
-  --eerie-black-1: hsla(332, 75%, 63%, 0.555);
+  --eerie-black-1: #F5D1C3;
   --eerie-black-2: #5F9595;
   --smoky-black: #F5D1C3;
   --white-1: #5F9595;
@@ -544,7 +544,7 @@ main {
 
 .service-icon-box { margin-bottom: 10px; }
 
-.service-icon-box img { margin: auto; }
+.service-icon-box img { margin: auto; border-radius: 25px;}
 
 .service-content-box { text-align: center; }
 
