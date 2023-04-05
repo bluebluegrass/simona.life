@@ -346,7 +346,62 @@
         <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="simonana" data-description="Support me on Buy me a coffee!" data-message="感谢你的支持！" data-color="#5F9595" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 
+        <h3 class="h3 service-title">Contact Me</h3>
+     
        
+        <head>
+         
+         
+          <style>
+            form {
+              background-color: #F5D1C3;
+              padding: 20px;
+              color: #5F9595;
+              border-radius: 10px;
+            }
+        
+            input[type="name"], input[type="email"], textarea {
+              border-color: white;
+              padding: 5px; /* Add padding to the input and textarea boxes */
+              border-radius: 5px;
+            }
+        
+            button[type="submit"] {
+              background-color: #fbeee0;
+              color: #5F9595;
+              border: none;
+              padding: 10px 20px;
+              cursor: pointer;
+              border-radius: 5px;
+            }
+        
+            button[type="submit"]:hover {
+              background-color: #f3e3d3;
+            }
+          </style>
+        </head>
+        <body>
+          <form action="https://formspree.io/f/xayzpzrj" method="POST">
+            <label>
+              Your name:
+              <input type="name" name="name">
+            </label>
+            <br><br>
+            <label>
+              Your email:
+              <input type="email" name="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+"> <!-- Add a pattern to validate email submissions -->
+            </label>
+            <br><br>
+            <label>
+              Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <br><br>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
+        </form>
+      </body>
+      </html>
 
 
 
@@ -359,48 +414,7 @@
 
 
 
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
+     
 
     </div>
 
