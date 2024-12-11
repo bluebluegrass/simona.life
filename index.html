@@ -262,13 +262,9 @@
             </li>
            
 
-            
-
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/ohmama_logo.jpeg" alt="design icon" width="50">
-                       
               </div>
               
               <div class="service-content-box">
@@ -277,11 +273,23 @@
                 <p class="service-item-text">
                   【播客】 讲述属于中国女性的最真实的故事，相信女性的声音和讲述的力量
                 </p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/1AUhH0zNMxuwuILEoFvDrK?utm_source=generator" width="100%" height="252" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-                   
-                             
+              </div>
+            
+              <!-- Move the iframe outside of service-content-box -->
+              <div class="spotify-container" style="width: 100%;">
+                <iframe 
+                  style="border-radius:12px; width: 100%;" 
+                  src="https://open.spotify.com/embed/show/1AUhH0zNMxuwuILEoFvDrK?utm_source=generator" 
+                  height="252" 
+                  frameBorder="0" 
+                  allowfullscreen="" 
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                  loading="lazy">
+                </iframe>
+              </div>
             </li>
+
+           
 
             <li class="service-item">
 
@@ -368,7 +376,7 @@
                 <h4 class="h4 service-item-title">手把手教你开启一个新播客</h4>
              
                 <button class="fcc-button" onclick="location.href='https://www.buymeacoffee.com/simonana/e/107286'">预约</button>
-                
+
                 <p class="service-item-text">
                   【Coaching Session】从零开始制作了三档节目，近百期单集节目，从技术问题到访谈技巧到后期制作，都会让你节约大量时间
                 </p>

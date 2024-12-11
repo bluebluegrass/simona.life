@@ -676,7 +676,16 @@ main {
 
   }
 
-
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .spotify-container {
+    margin-top: 1rem; /* Add some spacing between the content and player */
+    width: 100%;
+  }
 
   /**
    * #REUSED STYLE
@@ -790,10 +799,12 @@ main {
 
   .service-item {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 18px;
-    padding: 30px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .spotify-container {
+    margin-top: 1rem; /* Add some spacing between the content and player */
+    width: 100%;
   }
 
   .service-icon-box {
