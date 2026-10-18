@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simona</title>
+  <title>穿堂风 Simona · 看看另一种生活</title>
+  <meta name="description" content="现在生活在阿姆斯特丹。用视频分享跨国工作与生活，也和走到人生路口的人聊聊。">
 
   <!--
     - favicon
@@ -15,7 +16,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261018-home">
 
   <!--
     - google font link
@@ -50,7 +51,7 @@
         <div class="info-content">
           <h1 class="name" title="Simona">穿堂风_Simona</h1>
 
-          <p class="title">Podcaster / Digital Nomad</p>
+          <p class="title">生活观察 / 视频创作</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -92,7 +93,7 @@
             <div class="contact-info">
               <p class="contact-title">Current Location</p>
 
-              <address>Tokyo, Japan</address>
+              <address>Amsterdam, Netherlands</address>
             </div>
 
           </li>
@@ -111,9 +112,6 @@
           </a>
           <a target="_blank" href="https://www.xiaohongshu.com/user/profile/5fc5b484000000000100bcad">
             <img src="./assets/images/xiaohongshu.png" alt="小红书" width="20">
-          </a>
-          <a target="_blank" href="https://www.youtube.com/channel/UCHh3PxWb7aIQr9aUo1pEgJA">
-            <img src="./assets/images/youtube.svg" alt="Youtube" width="20">
           </a>
           <a href="mailto:hey.simonalife@gmail.com" class="contact-link">
             <img src="./assets/images/email.png" alt="Email" width="20">
@@ -143,37 +141,13 @@
         - #NAVBAR
       -->
 
-      <nav class="navbar">
-
+      <nav class="navbar" aria-label="页面导航">
         <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" target="_blank"
-              onclick="window.location.href='https://blog.simona.life/';">Blog</button>
-          </li>
-
-
-          <li class="navbar-item">
-            <button class="navbar-link" target="_blank"
-              onclick="window.location.href='https://ohmama.simona.life';">噢！妈妈</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" target="_blank"
-              onclick="window.location.href='https://blog.simona.life/feed/audio.xml';">sàgó散讲</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" target="_blank"
-              onclick="window.location.href='https://thepodluckclub.com/';">The Pod Luck Club</button>
-          </li>
-
+          <li class="navbar-item"><a class="navbar-link" href="#now">现在的我</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#videos">我的视频</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#talk">和我聊聊</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#past">过去的作品</a></li>
         </ul>
-
       </nav>
 
 
@@ -184,200 +158,83 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
+      <article class="about active" data-page="about">
+        <header id="now"><h2 class="h2 article-title">很开心在这里遇见你。</h2></header>
         <section class="about-text">
-          <p>
-            很开心遇见你！我是穿堂风。曾经的互联网数据打工人，2022年11月被Facebook裁员后，开启数字游民生活。目前在日本定居。
-          </p>
-          <p>
-            女权主义者；关注性别议题，和好友共创WomenOverseas她乡社区；播客「噢！妈妈」主播，讲述属于中国女性的最真实的故事；
-          </p>
-          <p>
-            欢迎在网站留言，或者预约我提供的服务。如果你有好玩的活动和项目，也欢迎你给我写邮件。
-          </p>
-
-          </p>
-
-
+          <p>我是穿堂风 Simona。在美国、新加坡、日本和荷兰生活过，经历过工作、burnout、离开和重新开始。</p>
+          <p>现在住在阿姆斯特丹，一边上班，一边骑车、交朋友、做视频，慢慢找到适合自己的生活节奏。</p>
+          <p>如果你最近也在考虑，接下来想在哪里、怎样生活，欢迎来看看我的故事，或者和我聊聊。</p>
+          <p class="english-note" lang="en">Based in Amsterdam. Sharing stories about life across countries, work and starting over — and making space for a conversation about your own next chapter.</p>
+          <div class="home-actions"><a class="fcc-button home-button" href="#videos">看我的视频 ↓</a><a class="fcc-button home-button" href="#talk">和我聊聊 ↓</a></div>
         </section>
 
-        <div style="height: 50vh; border-radius: 15px; overflow: hidden; margin: 20px;">
-          <script src="https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js"
-            data-background-color="#ffffff" data-text-color="#000000" data-button-color="#e9781c"
-            data-button-text-color="#FFFFFF" data-title="The Pod Luck Club" data-description="优质播客推荐计划"
-            data-icon="https://thepodluckclub.com/content/images/size/w192h192/size/w256h256/2024/04/thepodluckclub.png"
-            data-site="https://thepodluckclub.com/" data-locale="cn" async>
-            </script>
-        </div>
-        <!--
-          - service
-        -->
+        <section class="service home-section" id="videos">
+          <h3 class="h3 service-title">在小红书，记录正在发生的生活</h3>
+          <p class="section-note">跨国生活、世界打工观察，以及那些没有标准答案的选择。</p>
+          <a class="service-item video-feature" href="https://www.xiaohongshu.com/user/profile/5fc5b484000000000100bcad" target="_blank" rel="noopener noreferrer">
+            <div class="service-icon-box"><img src="./assets/images/xiaohongshu.png" alt="" width="50"></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">穿堂风 Simona · 小红书</h4>
+              <p class="service-item-text">视频里有我的经历，也有我还在想的问题。你可以先听听我怎样看待工作、迁移和重新开始。</p>
+              <span class="fcc-button home-button">去主页看视频 ↗</span>
+            </div>
+          </a>
+          <div class="video-topics">
+            <div><span class="topic-number">01 / 迁移</span><h4>离开美国之后，世界向我展开</h4><p>换一个地方生活，也重新想想自己想要什么。</p></div>
+            <div><span class="topic-number">02 / 选择</span><h4>不以拿绿卡为目标的海外生活</h4><p>身份、稳定和自己的需要，怎样放在一起考虑？</p></div>
+            <div><span class="topic-number">03 / 工作</span><h4>在荷兰，重新学习怎么上班</h4><p>经历工作受挫以后，再认识自己和环境。</p></div>
+          </div>
+          <p class="section-note video-note">这些是我聊过的主题，视频可以在上方的小红书主页中找到。</p>
+        </section>
 
-        <section class="service">
+        <section class="service home-section" id="talk">
+          <h3 class="h3 service-title">有些选择，想找个人聊聊。</h3>
+          <div class="service-item talk-panel"><div class="service-content-box">
+            <p class="talk-eyebrow">一对一付费对话 · 和我聊聊</p>
+            <h4 class="h4 service-item-title">和一个走过不同路的人，交换一下视角。</h4>
+            <p class="service-item-text">你可能已经在海外生活，却不确定还想不想留下；也可能工作了几年，越来越疲惫，想换一种生活，却不知道从哪里开始。</p>
+            <p class="service-item-text">我在不同国家生活过，也经历过 burnout、被裁员、暂停工作和重新开始。我们可以从你最近在想的事情聊起，聊聊我当时怎样选择，以及后来才意识到的事。</p>
+            <div class="talk-topics"><span>换一个国家生活</span><span>离开或回到职场</span><span>burnout 之后的节奏</span><span>在新地方建立日常</span></div>
+            <p class="service-item-text">你已经有自己的想法，也愿意听听另一种经历。我们可以一起把问题展开，看看哪些部分与你有关。你不需要提前把问题整理得很清楚，带着当下的困惑来就好。</p>
+            <a class="fcc-button home-button" href="mailto:hey.simonalife@gmail.com?subject=想和你聊聊">给我写信，聊聊你的情况 ↗</a>
+            <p class="booking-note">先通过邮件联系，确认想聊的内容与时间。</p>
+          </div></div>
+        </section>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
-
+        <section class="service home-section" id="past">
+          <h3 class="h3 service-title">这些年，我还做过……</h3>
+          <p class="section-note">声音、文字和社区，留下了我在不同阶段关心的事情。播客最近没有更新，节目仍然可以收听。</p>
           <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/gap.png" alt="camera icon" width="50">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">【1:1】Gap两年，全球旅居探索，我后悔了吗？</h4>
-
-                <button class="fcc-button"
-                  onclick="window.location.href='https://buymeacoffee.com/simonana/e/336214';">预约</button>
-
-                <p class="service-item-text">
-                  1:1 coffee chat with me for 30 minutes </p>
-              </div>
-
-            </li>
-
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/thepodluckclub.jpeg" alt="camera icon" width="50">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">The Pod Luck Club</h4>
-                <button class="fcc-button" onclick="window.location.href='https://thepodluckclub.com';">订阅</button>
-
-
-                <p class="service-item-text">
-                  【Newsletter】 优质播客推荐计划。日听播客三百集，每天推荐一期我喜欢的播客，每两周一篇发自世界某个角落的我的人生冒险故事。
-                </p>
-              </div>
-
-            </li>
-
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/ohmama_logo.jpeg" alt="design icon" width="50">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title" onclick="window.location.href='https://ohmama.simona.life';">噢！妈妈</h4>
-                <button class="fcc-button" onclick="window.location.href='https://ohmama.simona.life';">收听</button>
-                <p class="service-item-text">
-                  【播客】 讲述属于中国女性的最真实的故事，相信女性的声音和讲述的力量
-                </p>
-                <div class="spotify-container">
-                  <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/show/1AUhH0zNMxuwuILEoFvDrK?utm_source=generator" width="100%"
-                    height="252" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-                  </iframe>
-                </div>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/sago_logo.svg" alt="sàgó" width="50">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">sàgó散讲</h4>
-                <button class="fcc-button"
-                  onclick="window.location.href='https://blog.simona.life/episodes/';">收听</button>
-                <p class="service-item-text">
-                  【播客】 散讲 with Simona，在每一个公园长椅上向你发送电波
-                </p>
-                <div class="spotify-container">
-                  <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/show/49gsbyIxARl4tJZfrMyBkx?utm_source=generator" width="100%"
-                    height="252" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-                  </iframe>
-                </div>
-              </div>
-            </li>
-
-
-
-
-            </li>
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/simona_blog.svg" alt="design icon" width="50">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">博客</h4>
-
-                <button class="fcc-button" onclick="window.location.href='https://blog.simona.life/';">阅读</button>
-                <p class="service-item-text">
-                  【文字】 在每一个咖啡店里记录下此刻的心情
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/taxiang.svg" alt="mobile app icon" width="50">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">WomenOverseas她乡</h4>
-
-                <button class="fcc-button" onclick="window.location.href='https://womenoverseas.com';">加入她乡</button>
-
-                <p class="service-item-text">
-                  【大型海外华人女性社区】 欢迎女性和Non-binary加入她乡，和我们一起探索更广阔的世界，成为更好的自己
-                </p>
-              </div>
-
-            </li>
-
-
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/coaching.png" alt="camera icon" width="50">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">手把手教你开启一个新播客</h4>
-                <button class="fcc-button"
-                  onclick="location.href='https://www.buymeacoffee.com/simonana/e/107286'">预约</button>
-                <p class="service-item-text">
-                  【Coaching Session】从零开始制作了三档节目，近百期单集节目，从技术问题到访谈技巧到后期制作，都会让你节约大量时间
-                </p>
-              </div>
-
-            </li>
-
-
-
-
-
-          </ul>
-
+<li class="service-item"><div class="service-icon-box"><img src="./assets/images/ohmama_logo.jpeg" alt="" width="44"></div><div class="service-content-box">
+<h4 class="h4 service-item-title">噢妈妈</h4>
+<p class="service-item-text">女性的真实故事与生育、母职和人生选择。</p>
+<a class="fcc-button" href="https://ohmama.simona.life" target="_blank" rel="noopener noreferrer">收听节目 ↗</a>
+<div style="margin-top: 24px; border-top: 1px solid #5f95954d; padding-top: 18px;">
+<p class="talk-eyebrow">两期关于我自己的故事 · 付费单集</p>
+<h5 class="h4 service-item-title">离开的决心｜三十岁开始叛逆，这个婚我就结到这里了</h5>
+<p class="service-item-text">聊聊我为什么结束婚姻，以及独居以后，怎样重新认识自己的需要。</p>
+<a class="fcc-button" href="https://www.xiaoyuzhoufm.com/episode/649af757a5b2b405c6dac335" target="_blank" rel="noopener noreferrer">小宇宙试听与购买 ↗</a>
+</div>
+<div style="margin-top: 24px; border-top: 1px solid #5f95954d; padding-top: 18px;">
+<h5 class="h4 service-item-title">我决定冲动一次，请你听我的心理咨询现场</h5>
+<p class="service-item-text">一次由我作为来访者的真实心理咨询录音，记录那些平时不容易说出口的感受。</p>
+<a class="fcc-button" href="https://www.xiaoyuzhoufm.com/episode/657977cb6396a4645aa339c6" target="_blank" rel="noopener noreferrer">小宇宙试听与购买 ↗</a>
+<a class="fcc-button" href="https://buymeacoffee.com/simonana/e/192380" target="_blank" rel="noopener noreferrer">Buy Me a Coffee 购买 ↗</a>
+</div>
+</div></li>
+<li class="service-item"><div class="service-icon-box"><img src="./assets/images/sago_logo.svg" alt="" width="44"></div><div class="service-content-box"><h4 class="h4 service-item-title">sàgó散讲</h4><p class="service-item-text">在公园长椅上，向你发送生活里的电波。</p><a class="fcc-button" href="https://blog.simona.life/episodes/" target="_blank" rel="noopener noreferrer">收听节目 ↗</a></div></li>
+<li class="service-item"><div class="service-icon-box"><img src="./assets/images/ohmama_logo.jpeg" alt="" width="44"></div><div class="service-content-box"><h4 class="h4 service-item-title">我为什么（不）想成为妈妈</h4><p class="service-item-text">从《噢妈妈》的访谈出发，把声音整理成可以慢慢读的文字。</p><a class="fcc-button" href="https://weread.qq.com/web/bookDetail/1fd32ce0813ab99d7g014a4c" target="_blank" rel="noopener noreferrer">阅读 ↗</a></div></li>
+<li class="service-item"><div class="service-icon-box"><img src="./assets/images/taxiang.svg" alt="" width="44"></div><div class="service-content-box"><h4 class="h4 service-item-title">WomenOverseas 她乡</h4><p class="service-item-text">和朋友共创的海外华人女性与 non-binary 社区。</p><a class="fcc-button" href="https://womenoverseas.com" target="_blank" rel="noopener noreferrer">认识她乡 ↗</a></div></li>
+</ul>
+          <details class="past-more"><summary>还有一些文字和亲手做的工具</summary><div class="past-links">
+            <a href="https://blog.simona.life/" target="_blank" rel="noopener noreferrer">穿堂风博客 ↗</a>
+            <a href="https://thepodluckclub.com/" target="_blank" rel="noopener noreferrer">The Pod Luck Club 档案 ↗</a>
+            <p>七年半的播客推荐与长信，付费订阅已于 2026 年 9 月结束。原站计划保留至 12 月 22 日。</p>
+            <a href="https://github.com/bluebluegrass/KnowYourCompany" target="_blank" rel="noopener noreferrer">KnowYourCompany · 公司研究工具 ↗</a>
+            <a href="https://github.com/bluebluegrass/FastCut" target="_blank" rel="noopener noreferrer">FastCut · 文字剪辑工具 ↗</a>
+          </div></details>
         </section>
-
-        <script data-name="BMC-Widget" data-cfasync="false"
-          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="simonana"
-          data-description="Support me on Buy me a coffee!" data-message="感谢你的支持！" data-color="#5F9595"
-          data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-
-        <h3 class="h3 service-title">Contact Me</h3>
+        <h3 class="h3 service-title">给我留言</h3>
 
         <style>
           form {
@@ -426,21 +283,21 @@
 
         <form action="https://formspree.io/f/xayzpzrj" method="POST">
           <label>
-            Your name:
+            你的名字：
             <input type="text" name="name" required>
           </label>
 
           <label>
-            Your email:
+            你的邮箱：
             <input type="email" name="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
           </label>
 
           <label>
-            Your message:
+            想对我说的话：
             <textarea name="message" rows="5" required></textarea>
           </label>
 
-          <button type="submit">Send</button>
+          <button type="submit">发送留言</button>
         </form>
 
 
@@ -457,6 +314,7 @@
 
 
 
+      </article>
     </div>
 
   </main>
@@ -476,6 +334,11 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script data-name="BMC-Widget" data-cfasync="false"
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="simonana"
+    data-description="Support me on Buy me a coffee!" data-message="感谢你的支持！" data-color="#5F9595"
+    data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 </body>
 

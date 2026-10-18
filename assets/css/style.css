@@ -820,3 +820,34 @@ main {
 
   .timeline-text { max-width: 700px; }
 }
+
+/* Current homepage: original palette, type and panels retained. */
+.home-section { margin-top: 44px; scroll-margin-top: 30px; }
+#now { scroll-margin-top: 30px; }
+.home-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 24px; }
+.home-button { padding: 11px 20px; min-height: 44px; margin-top: 16px; }
+.home-actions .home-button { margin-top: 0; }
+.english-note { font-size: 13px; line-height: 1.8; }
+.section-note { color: var(--light-gray); font-size: 14px; line-height: 1.9; margin: -8px 0 22px; }
+.video-feature { text-decoration: none; }
+.video-topics { display: grid; gap: 22px; margin-top: 26px; }
+.video-topics > div { border-top: 1px solid #c4d7d180; padding-top: 16px; }
+.topic-number { color: #F5D1C3; font-size: 12px; }
+.video-topics h4 { color: white; font-size: 16px; font-weight: 500; margin: 10px 0; }
+.video-topics p, .video-note { font-size: 13px; color: var(--light-gray); line-height: 1.8; }
+.video-note { margin-top: 18px; }
+.talk-panel { display: block; text-align: left; }
+.talk-panel .service-item-text { margin-top: 16px; line-height: 1.9; }
+.talk-eyebrow { color: #4b6868; font-size: 12px; margin-bottom: 14px; }
+.talk-topics { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.talk-topics span { font-size: 12px; color: #446e6e; padding: 6px 11px; border: 1px solid #5f95954d; border-radius: 20px; }
+.booking-note { font-size: 12px; color: #4b6868; margin-top: 12px; }
+#past .fcc-button { margin-top: 14px; }
+.past-more { margin-top: 26px; color: var(--light-gray); font-size: 14px; }
+.past-more summary { cursor: pointer; padding: 12px 0; }
+.past-links { display: grid; gap: 16px; padding: 16px 0; line-height: 1.8; }
+.past-links a { color: white; text-decoration: underline; text-underline-offset: 4px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid #F0BC68; outline-offset: 5px; }
+@media(min-width: 780px) { .video-topics { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+@media(max-width: 579px) { .navbar-link { padding: 18px 4px; } .home-section { scroll-margin-top: 20px; } }
+@media(prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
